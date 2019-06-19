@@ -18,10 +18,10 @@ cmake_minimum_required(VERSION 3.0.0) # Interface libraries introduced in 3
 
 set(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake ${CMAKE_MODULE_PATH})
 
-include(HunterGate)
-HunterGate(
-    URL "https://github.com/ruslo/hunter/archive/v0.14.3.tar.gz"
-    SHA1 "e05bc95f6d62b7c55188044e39e8be5afb1e8af4")
+#include(HunterGate)
+#HunterGate(
+#    URL "https://github.com/ruslo/hunter/archive/v0.14.3.tar.gz"
+#    SHA1 "e05bc95f6d62b7c55188044e39e8be5afb1e8af4")
 
 project(comet)
 

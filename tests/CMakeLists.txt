@@ -14,7 +14,7 @@
 # https://github.com/alamaison/comet
 #
 
-hunter_add_package(Boost COMPONENTS filesystem system test)
+find_package(Boost COMPONENTS filesystem system test)
 
 include(max_warnings.cmake)
 
