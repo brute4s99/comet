@@ -117,10 +117,10 @@ target_include_directories(comet
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>)
 
-option(BUILD_TESTING "Build Comet test suite" ON)
+option(BUILD_TESTING "Build Comet test suite" OFF)
 if(BUILD_TESTING)
   enable_testing()
-  add_subdirectory(tests)
+#  add_subdirectory(tests)
 endif()
 
 # Package config
