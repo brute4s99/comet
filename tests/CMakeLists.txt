@@ -38,8 +38,8 @@ set(SOURCES
 add_executable(unit-tests ${SOURCES})
 
 set(Boost_USE_STATIC_LIBS ON)
-#find_package(Boost 1.40 REQUIRED
-#  COMPONENTS filesystem system unit_test_framework)
+find_package(Boost 1.40 REQUIRED
+  COMPONENTS filesystem system unit_test_framework)
 
 target_compile_definitions(unit-tests PRIVATE BOOST_ALL_NO_LIB=1)
 target_include_directories(unit-tests PRIVATE ${Boost_INCLUDE_DIR})
